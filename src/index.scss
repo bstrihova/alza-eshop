@@ -74,3 +74,12 @@ h6 {
 #__next {
     isolation: isolate;
 }
+
+.app {
+    margin: 8px;
+    border: 1px solid black;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import body from './body.json';
 import hardcodedData from './data.json';
+import './index.scss';
 import Loader from './components/loader';
+import Header from './containers/Header';
+import Main from './containers/Main';
+
 function App() {
     const [data, setData] = useState(null);
     const [errors, setErrors] = useState(null);
@@ -32,7 +36,13 @@ function App() {
         fetchData();
     }, []);
 
+    return (
+        <div className="app">
+            <Header />
+            {errors}
             {data ? <Main data={data} /> : <Loader />}
+        </div>
+    );
 }
 
 export default App;
