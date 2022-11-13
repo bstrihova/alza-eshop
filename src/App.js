@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import body from './body.json';
 import hardcodedData from './data.json';
+import Loader from './components/loader';
 function App() {
     const [data, setData] = useState(null);
     const [errors, setErrors] = useState(null);
@@ -31,6 +32,7 @@ function App() {
         fetchData();
     }, []);
 
+            {data ? <Main data={data} /> : <Loader />}
 }
 
 export default App;
