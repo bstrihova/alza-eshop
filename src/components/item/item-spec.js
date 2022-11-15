@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const StyledText = styled.p`
     opacity: 0.5;
-    overflow-wrap: break-word;
     text-overflow: ellipsis;
     padding-top: ${(props) => (props.promo ? '16px' : 0)};
     height: 100%;

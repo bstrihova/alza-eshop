@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeading = styled.h4`
-    overflow-wrap: break-word;
     text-overflow: ellipsis;
     width: fit-content;
 `;
